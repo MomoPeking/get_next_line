@@ -6,7 +6,7 @@
 /*   By: qdang <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 18:03:08 by qdang             #+#    #+#             */
-/*   Updated: 2019/10/19 16:12:55 by qdang            ###   ########.fr       */
+/*   Updated: 2019/10/21 16:16:20 by qdang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,10 @@ int		get_next_line(const int fd, char **line)
 	{
 		buff[amber] = '\0';
 		if (save[fd] == NULL)
-			save[fd] = ft_strnew(1);
-		temp = ft_strjoin(save[fd], buff);
+			save[fd] = ft_strnew(0);
+		temp = ft_strdup(save[fd]);
 		free(save[fd]);
-		save[fd] = ft_strdup(temp);
+		save[fd] = ft_strjoin(temp, buff);
 		free(temp);
 		if (ft_strchr(buff, '\n'))
 			break ;

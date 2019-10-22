@@ -6,7 +6,7 @@
 /*   By: qdang <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 18:03:22 by qdang             #+#    #+#             */
-/*   Updated: 2019/10/17 15:52:33 by qdang            ###   ########.fr       */
+/*   Updated: 2019/10/21 16:18:46 by qdang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 
-# define BUFF_SIZE	1
+# define BUFF_SIZE	500
 # define FD_SIZE	256
 
 int		get_next_line(const int fd, char **line);
